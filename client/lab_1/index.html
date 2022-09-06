@@ -1,20 +1,41 @@
-include your HTML opening tags
-and your hidden "head" tag
-and your "title" tag
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  
+  <body>
+    <div class="full-width wrapper">
+      <h1>William Jones's Labs for INST377</h1>
+      <div class="container">
+        <div class="left">
+          <h2>Album Names</h2>
+          <ol> 
+            <li>Worlds - Porter Robinson</li>
+            <li>I Am Not A Human Being - Lil Wayne</li>
+            <li>FRACTALS - Subtronics</li>
+            <li>Nurture - Porter Robinson</li>
+            <li>Where U Belong - Throttle</li>
+          </ol>
+        </div>
 
-
-full-width wrapper div
-  header containing: YOUR NAME's Labs For INST377
-  container div
-      left div
-        sub-header saying "albums"
-        Your top 5 albums in an ordered list
-      right div (main div for the site)
-        sub-header saying "image carousel"
-          div to contain four images
-            four images of mochi from your readings, all square (they're four different image types!)
-          div to contain a description or text
-            description of images
-
-
-full-width page footer containing your github account name and a link to your gitHub account
+        <div class="right">
+          <h2>Image Carousel</h2>
+            <div class="carousel">
+              <img src='images/mochi.jpg' alt='A mochi ball in a bubble'/>
+              <img src='images/mochi.gif' alt='A dancing mochi ball'/>
+              <img src='images/mochi.png' alt='A mochi ball'/>
+              <img src='images/mochi.svg' alt='A mochi ball with Bézier handles'/>
+            </div>
+            
+            <div>
+              Decsription of the images above
+            </div>    
+          </div>
+      </div>  
+    
+    <footer class="full-width">
+      <a href='https://github.com/will16363'>Will16363</a></p>
+      </footer>
+  </body>
+</html>
