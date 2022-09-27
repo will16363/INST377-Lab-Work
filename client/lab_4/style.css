@@ -140,6 +140,8 @@ form {
   margin: 1rem;
   align-items: center;
   max-width: 450px;
+  display: flex;
+  flex-flow: column;
 }
 
 /*
