@@ -92,8 +92,8 @@ form {
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #940505;
-  color: #f1f1f1;
+  background-color: #46e060;
+  color: #2c2c2c;
 
   /* shapes */
   border-radius: 6px;
@@ -128,14 +128,14 @@ form {
 }
 
 .left_section {
-  background-color: #0baf70;
+  background-color: #743dec;
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .right_section {
-  background-color: #055694;
+  background-color: #46e060;
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
@@ -153,13 +153,13 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: #ffd700;
+  background-color: #743dec;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .footer a {
-  color: #940505;
+  color: #46e060;
   text-decoration: underline;
 }
 
@@ -170,9 +170,9 @@ form {
 */
 .footer a:hover {
   /* Hue, saturation, luminosity, alpha */
-  background-color: hsla(0, 0%, 90%, 0.15);
+  background-color: #2c2c2c;
   /* red, green, blue, alpha */
-  color: rgb(25, 197, 236);
+  color: #743dec;
   text-decoration: none;
 }
 
