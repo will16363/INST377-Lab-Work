@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
       timerId = null;
     } else {
       draw();
-      timerId = setInterval(moveDown, 100);
+      timerId = setInterval(moveDown, 1000);
       nextRandom = Math.floor(Math.random() * theTetrominoes.length);
       displayShape();
     }
@@ -200,7 +200,6 @@ document.addEventListener('DOMContentLoaded', () => {
           squares[index].style.backgroundColor = '';
         });
         const squaresRemoved = squares.splice(i, width);
-        console.log(squaresRemoved)
         squares = squaresRemoved.concat(squares);
         squares.forEach(cell => grid.appendChild(cell));
       }
