@@ -1,5 +1,39 @@
-<!-- Bring in your successful HTML/CSS from the Flexbox lab -->
-<!-- Your page will need a form in it with an 'action' to /api and a single text field with an id/name of "resto" -->
-<!-- If you open /routes/apiRoutes and go to line 38 you will find the server side answer to your request! -->
-
 <!-- Temporarily unhook your script.js file from your main index file -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>William Jones' Labs for INST377</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>William Jones' Labs for INST377</h1>
+      </header>
+      <div class="container">
+        <div class="left_section box">
+          <h3>Form Inputs</h3>
+          <form action="/api" class="box">
+            Restaurant Name
+            <label for="resto"></label>
+            <input type="text" name="resto" id="resto" />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="right_section box">
+          <h3>Local Restaurants</h3>
+          <div class="restaurants_list box">
+            A list of restaurants from an API
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        My Github Account Name:
+        <a class="a" href="https://github.com/will16363">Will16363</a>
+      </footer>
+    </div>
+  </body>
+</html>
