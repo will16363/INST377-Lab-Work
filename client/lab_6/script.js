@@ -1,12 +1,3 @@
-/* eslint-disable max-len */
-
-import { load } from "dotenv";
-
-/*
-  Hook this script to index.html
-  by adding `<script src="script.js">` just before your closing `</body>` tag
-*/
-
 /*
   ## Utility Functions
     Under this comment place any utility functions you need - like an inclusive random number selector
@@ -25,7 +16,7 @@ function injectHTML(list) {
 
   const listEl = document.createElement('ol');
   target.appendChild(listEl);
-  list.forEarch((item) => {
+  list.forEach((item) => {
     const el = document.createElement('li');
     el.innerText = item.name;
     listEl.appendChild(el);
