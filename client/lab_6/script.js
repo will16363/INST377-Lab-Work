@@ -1,5 +1,7 @@
 /* eslint-disable max-len */
 
+import { load } from "dotenv";
+
 /*
   Hook this script to index.html
   by adding `<script src="script.js">` just before your closing `</body>` tag
@@ -62,7 +64,8 @@ async function mainEvent() {
 
   // the async keyword means we can make API requests
   const form = document.querySelector('.main_form'); // get your main form so you can do JS with it
-  const submit = document.querySelector('get-resto'); // get a reference to your submit button
+  const submit = document.querySelector('#get-resto'); // get a reference to your submit button
+  const loadAnimation = document.querySelector('.lds-ellipsis');
   submit.style.display = 'none'; // let your submit button disappear
 
   /*
@@ -70,7 +73,7 @@ async function mainEvent() {
     This next line goes to the request for 'GET' in the file at /server/routes/foodServiceRoutes.js
     It's at about line 27 - go have a look and see what we're retrieving and sending back.
    */
-  const results = await fetch('/api/foodServicesPG');
+  const results = await fetch('/api/foodServicePG');
   const arrayFromJson = await results.json(); // here is where we get the data from our request as JSON
 
   /*
@@ -91,6 +94,9 @@ async function mainEvent() {
   // This IF statement ensures we can't do anything if we don't have information yet
   if (arrayFromJson.data?.length > 0) { // the question mark in this means "if this is set at all"
     submit.style.display = 'block'; // let's turn the submit button back on by setting it to display as a block when we have data available
+
+    loadAnimation.classList.remove('lds-ellipsis');
+    loadAnimation.classList.add('lds-ellipsis_hidden');
 
     // And here's an eventListener! It's listening for a "submit" button specifically being clicked
     // this is a synchronous event event, because we already did our async request above, and waited for it to resolve
