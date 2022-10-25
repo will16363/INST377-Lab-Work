@@ -90,7 +90,7 @@ function getRandomIntInclusive(min, max) {
   
 	  form.addEventListener('input', (event)=> {
 		console.log(event.target.value);
-		const filteredtList = filterList(currentList, event.target.value);
+		const filteredList = filterList(currentList, event.target.value);
 		injectHTML(filteredList);
 	  });
 
