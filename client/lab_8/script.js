@@ -4,9 +4,9 @@
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 */
 function getRandomIntInclusive(min, max) {
-	min = Math.ceil(min);
-	max = Math.floor(max);
-	return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
+	newMin = Math.ceil(min);
+	newMax = Math.floor(max);
+	return Math.floor(Math.random() * (newMax - newMin + 1) + newMin); // The maximum is inclusive and the minimum is inclusive
   }
   
   function injectHTML(list) {
@@ -119,4 +119,3 @@ function getRandomIntInclusive(min, max) {
 	It runs first because the listener is set to when your HTML content has loaded
   */
   document.addEventListener('DOMContentLoaded', async () => mainEvent()); // the async keyword means we can make API requests
-  
