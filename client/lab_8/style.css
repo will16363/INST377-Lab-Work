@@ -80,6 +80,16 @@
 	padding-bottom: 1.5rem;
   }
   
+  /* Map styles */
+  #map {
+	display: block;
+	width: 400px;
+	height: 380px;
+	border: 2px dashed rgb(99, 99, 99);
+	margin-bottom: 1rem;
+	
+  }
+
   
   /*
 	This rule implies that the H1 tag lives within another HTML tag
